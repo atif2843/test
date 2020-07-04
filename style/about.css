@@ -1,0 +1,163 @@
+.about-conatiner{
+    height: 80vh;
+    width: 100%;
+}
+.about-wrapper{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.about-heading{
+    width: 100%;
+    text-align: left;
+}
+.about-heading  h1{
+    font-size: 40px;
+    font-family: dosis, sans-serif;
+    padding: 28px 10px;
+}
+.about-text > p{
+    font-size: 18px;
+    font-family: dosis, sans-serif;
+    padding: 28px 10px;
+}
+.about-mid-sec{
+    width: 100%;
+    background: url('/images/corrugated-board-grades-explained.jpg'), rgba(0,0,0, 0.6);
+}
+.about-item-container{
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 10px;
+}
+.mid-sec-container{
+    display: flex;
+}
+.about-mid-sec-circle{
+    width: 6rem;
+    height: 6rem;
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+    background: #E8E8E8;
+}
+.about-mid-sec-circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 32px;
+}
+.description-about{
+    padding: 10px 10px;
+}
+.primary-text-about{
+    font-size: 18px;
+    color: #E9E9E9;
+}
+.secondary-text-about{
+    font-size: 14px;
+    color: #E9E9E9;
+}
+.industry-container{
+    width: 100%;
+}
+.industry-header{
+    max-width: 30%;
+    padding: 20px 10px;
+    background: rgb(102, 102, 102);
+    text-align: center;
+    margin-top: 40px;
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.3));
+}
+.industry-header h1{
+    padding-left: 10px;
+    color: #e9e9e9;
+}
+.industry-item-wrapper ul{
+    list-style: none;
+    display: flex;
+    /* width: 720px; */
+    justify-content: space-around;
+    margin-left: -78px;
+}
+.industry-item-wrapper ul li{
+    margin: 0 123px;
+}
+.industry-item-wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 26px 0;
+}
+.industry-item-container{
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    position: relative;
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+}
+.industry-item{
+    width: inherit;
+    height: inherit;
+    clip-path: circle(50% at 50% 50%);
+    background: #C7C7C7;
+}
+.item-text{
+    height: 6rem;
+    width: 13rem;
+    position: absolute;
+    background: #7A7A7A;
+    left: 80%;
+    top: 22%;
+    z-index: -1;
+    text-align: CENTER;
+}
+.item-text-warpper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.item-text-warpper span{
+    font-size: 14px;
+    color: white;
+}
+div.item-text-warpper span.text-upper1{
+    margin-left: 16px;
+}
+.industry-item img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-electronic{
+    height: 48px;
+}
+.img-automobile{
+    height: 46px;
+}
+.img-pharma{
+    height: 48px;
+}
+.img-domestic{
+    height: 38px;
+}
+.img-food{
+    height: 48px;
+}
+img.img-garment{
+    height: 45px;
+}
+img.img-toy{
+    height: 45px;
+}
+img.img-shoe{
+    height: 40px;
+}
+.item-text p{
+    font-size: 14px;
+    color: white;
+}
