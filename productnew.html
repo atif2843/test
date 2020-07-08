@@ -44,22 +44,35 @@
         <div class="product-center">
             <nav class="product-nav">
                 <ul class="product-nav-list" id="product-nav">
-                    <li class="heading"><h3>Packaging Solutions</h3></li>
-                    <li class="tablink" onclick="openPage('corrugated', this)" id="defaultOpen">Corrugated<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('printed', this)">Printed<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('industrial', this)">industrial<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('garments', this)">Garment<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('costumized', this)">Customized<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('footwear', this)">Footwear<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('heavyduty', this)">Heavy Duty<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('electronic', this)">Electronics<i class="fas fa-chevron-right"></i></li>
-                    <li class="heading"><h3>Coorugated Rolls & Sheets</h3></li>
-                    <li class="tablink" onclick="openPage('rolls', this)">Rolls<i class="fas fa-chevron-right"></i></li>
-                    <li class="tablink" onclick="openPage('sheet', this)">Sheets<i class="fas fa-chevron-right"></i></li>
-                    <li class="heading"><h3>Corrugated Interior Fitments</h3></li>
-                    <li class="tablink" onclick="openPage('fitment', this)">Interior Fitments<i class="fas fa-chevron-right"></i></li>
+                    <li class="heading"><h3>Packaging Solutions</h3><i class="fas fa-chevron-right"></i></li>
+                    <div class="group1-container">
+                    <li class="tablink group1" onclick="openPage('corrugated', this)" id="defaultOpen">Corrugated<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group1" onclick="openPage('printed', this)">Printed<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group1" onclick="openPage('industrial', this)">industrial<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group1" onclick="openPage('garments', this)">Garment<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group1" onclick="openPage('costumized', this)">Customized<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group1" onclick="openPage('footwear', this)">Footwear<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group1" onclick="openPage('heavyduty', this)">Heavy Duty<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group1" onclick="openPage('electronic', this)">Electronics<i class="fas fa-chevron-right"></i></li>
+                </div>
+                    <li class="heading"><h3>Coorugated Rolls & Sheets</h3><i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group2" onclick="openPage('rolls', this)">Rolls<i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group2" onclick="openPage('sheet', this)">Sheets<i class="fas fa-chevron-right"></i></li>
+                    <li class="heading"><h3>Corrugated Interior Fitments</h3><i class="fas fa-chevron-right"></i></li>
+                    <li class="tablink group3" onclick="openPage('fitment', this)">Interior Fitments<i class="fas fa-chevron-right"></i></li>
                 </ul>
             </nav>
+            <script>
+                var headinglink= document.querySelectorAll('.heading');
+                var group1=document.querySelectorAll('li.tablink');
+                var group2=document.querySelectorAll('.group2');
+                var group3=document.querySelectorAll('.group3');
+                console.log(group1);
+                for(i=0; i<group1.length; i++)
+                headinglink[0].addEventListener('click',function(){
+                    group1[0].style.display="block";
+                })
+            </script>
         <div class="product-boxes">
             <div class="product-card-container" id="corrugated">
                 <div class="header-product-menu">
@@ -422,6 +435,7 @@
         
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+        
         </script>
     </main>
     <footer>

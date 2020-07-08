@@ -150,6 +150,49 @@ ul.product-nav-list li:hover{
     font-size: 18px;
     padding-top: 5px;
 }
+li.heading .fas{
+    display: none;
+}
 .active{
     background: linear-gradient(45deg, #1d6dffa8, transparent);
+}
+@media screen and (max-width: 375px){
+    .product-center{
+        width: 100%;
+    }
+    .product-boxes{
+        width: 100%;
+    }
+    .header-product-menu{
+        text-align:left;
+    }
+    .header-product-menu h1{
+        text-align: center;
+    }
+    .tablink{
+        display: none;
+    }
+    .product-nav{
+        width: 100%;
+        margin-top: 17px;
+    }
+    .product-center{
+        display: block;
+    }
+    ul.product-nav-list{
+        display: flex;
+    }
+    ul.product-nav-list li.heading{
+        font-size: 11px;
+    }
+    li.heading .fas{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: rotate(90deg) translate(-50%,-20px);
+    }
+    .group1-container{
+        font-size: 11px;
+    }
 }
