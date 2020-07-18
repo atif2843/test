@@ -806,7 +806,17 @@ ul.contact-footer-links li a{
 .caption-center p{
 	font-size: 22px !important;
 }
-
+@media screen and (max-width: 1024px){
+	.caption-center p{
+		font-size: 24px !important;
+	}
+	.caption-center h3{
+		font-size: 32px !important;
+	}
+	.caption-center{
+		width: 80%;
+	}
+}
 @media only screen and (max-width:800px) {
 	div.header-wrapper {
 		max-width: 100%;
@@ -879,23 +889,30 @@ ul.contact-footer-links li a{
 	.story__text{
 		transform: unset;
 	}
-}
-@media screen and (max-width: 1024px){
 	.caption-center p{
-		font-size: 14px !important;
+		font-size: 20px !important;
 	}
 	.caption-center h3{
-		font-size: 22px !important;
+		font-size: 28px !important;
+	}
+	.caption-center{
+		width: 80%;
 	}
 }
-@media screen and (max-width: 563px){
+@media screen and (max-width: 685px){
 	.caption-center p{
-		font-size: 9px !important;
+		font-size: 20px !important;
 	}
 	.caption-center h3{
-		font-size: 12px !important;
+		font-size: 30px !important;
 	}
 	.carousel-control-next, .carousel-control-prev{
 		display: none !important;
+	}
+	.caption-center{
+		width: 90%;
+	}
+	.carousel-item img{
+		height: 80vh;
 	}
 }
